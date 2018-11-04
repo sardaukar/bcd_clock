@@ -7,12 +7,12 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <div className="wrapper">
+            <div className="box none" />
             <div className="box off" />
-            <div className="box off" />
-            <div className="box off" />
+            <div className="box none" />
             <div className="box off" />
 
-            <div className="box off" />
+            <div className="box none" />
             <div className="box off" />
             <div className="box off" />
             <div className="box off" />
