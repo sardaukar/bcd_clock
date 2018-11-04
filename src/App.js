@@ -6,7 +6,27 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          Header
+          <div className="wrapper">
+            <div className="box off" />
+            <div className="box off" />
+            <div className="box off" />
+            <div className="box off" />
+
+            <div className="box off" />
+            <div className="box off" />
+            <div className="box off" />
+            <div className="box off" />
+
+            <div className="box on" />
+            <div className="box off" />
+            <div className="box off" />
+            <div className="box off" />
+
+            <div className="box off" />
+            <div className="box off" />
+            <div className="box off" />
+            <div className="box off" />
+          </div>
         </header>
       </div>
     );
