@@ -171,6 +171,15 @@ export default class App extends Component {
               )} />
           </div>
         </header>
+        <footer className='footer'>
+          <a
+            className='link'
+            href='https://github.com/sardaukar/bcd_clock'
+            target='_blank'
+          >
+            github
+          </a>
+        </footer>
       </div>
     )
   }

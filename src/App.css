@@ -4,7 +4,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,6 +19,17 @@
   grid-gap: 16px;
   background-color: #282c34;
   color: #444;
+}
+
+.footer {
+  background-color: #282c34;
+  color: #444;
+  min-height: 5vh;
+}
+
+.link {
+  text-decoration: none;
+  color: gray;
 }
 
 .box {
