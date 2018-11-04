@@ -15,8 +15,8 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
-  grid-gap: 20px;
+  grid-template-columns: 13% 13% 13% 13% 13% 13%;
+  grid-gap: 16px;
   background-color: #282c34;
   color: #444;
 }

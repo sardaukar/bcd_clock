@@ -26,7 +26,7 @@ class App extends Component {
   }
 
   getTimeString() {
-    return new Date().toISOString().substr(11, 5).replace(/:/g , "")
+    return new Date().toISOString().substr(11, 8).replace(/:/g , "")
   }
 
   padLeft(nr, n, str){
@@ -38,6 +38,7 @@ class App extends Component {
   }
 
   render() {
+
     const hours = [
       this.toBCD(this.state.time[0]),
       this.toBCD(this.state.time[1])
@@ -46,11 +47,16 @@ class App extends Component {
       this.toBCD(this.state.time[2]),
       this.toBCD(this.state.time[3])
     ]
+    const seconds = [
+      this.toBCD(this.state.time[4]),
+      this.toBCD(this.state.time[5])
+    ]
 
     return (
       <div className="App">
         <header className="App-header">
           <div className="wrapper">
+
             <div className="box none" /> {/* hours[0][0] */}
             <div className={
               classNames(
@@ -69,6 +75,15 @@ class App extends Component {
                   'off': minutes[1][0] === '0'
                 }
               )} />  {/* minutes[1][0] */}
+            <div className="box none" /> {/* seconds[0][0] */}
+            <div className={
+              classNames(
+                'box',
+                {
+                  'on': seconds[1][0] === '1',
+                  'off': seconds[1][0] === '0'
+                }
+              )} />  {/* seconds[1][0] */}
 
             <div className="box none" /> {/* hours[0][1] */}
             <div className={
@@ -95,6 +110,22 @@ class App extends Component {
                   'off': minutes[1][1] === '0'
                 }
               )} />  {/* minutes[1][1] */}
+              <div className={
+              classNames(
+                'box',
+                {
+                  'on': seconds[0][1] === '1',
+                  'off': seconds[0][1] === '0'
+                }
+              )} />  {/* seconds[0][1] */}
+              <div className={
+              classNames(
+                'box',
+                {
+                  'on': seconds[1][1] === '1',
+                  'off': seconds[1][1] === '0'
+                }
+              )} />  {/* seconds[1][1] */}
 
             <div className={
               classNames(
@@ -128,6 +159,22 @@ class App extends Component {
                   'off': minutes[1][2] === '0'
                 }
               )} />  {/* minutes[1][2] */}
+            <div className={
+              classNames(
+                'box',
+                {
+                  'on': seconds[0][2] === '1',
+                  'off': seconds[0][2] === '0'
+                }
+              )} />  {/* seconds[0][2] */}
+            <div className={
+              classNames(
+                'box',
+                {
+                  'on': seconds[1][2] === '1',
+                  'off': seconds[1][2] === '0'
+                }
+              )} />  {/* seconds[1][2] */}
 
             <div className={
               classNames(
@@ -161,6 +208,22 @@ class App extends Component {
                   'off': minutes[1][3] === '0'
                 }
               )} />  {/* minutes[1][3] */}
+            <div className={
+              classNames(
+                'box',
+                {
+                  'on': seconds[0][3] === '1',
+                  'off': seconds[0][3] === '0'
+                }
+              )} />  {/* seconds[0][3] */}
+            <div className={
+              classNames(
+                'box',
+                {
+                  'on': seconds[1][3] === '1',
+                  'off': seconds[1][3] === '0'
+                }
+              )} />  {/* seconds[1][3] */}
           </div>
         </header>
       </div>
