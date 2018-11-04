@@ -1,1 +1,2 @@
 [ ] - add option to toggle numeral time display
+[ ] - change CSS to allow for column-by-column markup instead of line-by-line

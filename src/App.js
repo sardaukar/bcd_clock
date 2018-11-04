@@ -176,6 +176,7 @@ export default class App extends Component {
             className='link'
             href='https://github.com/sardaukar/bcd_clock'
             target='_blank'
+            rel='noopener noreferrer'
           >
             github
           </a>
