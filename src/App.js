@@ -24,7 +24,13 @@ export default class App extends Component {
   }
 
   getTimeString() {
-    return new Date().toISOString().substr(11, 8).replace(/:/g , '')
+    const date = new Date();
+
+    const hours = this.padLeft(date.getHours(), 2, "0");
+    const minutes = this.padLeft(date.getMinutes(), 2, "0");
+    const seconds = this.padLeft(date.getSeconds(), 2, "0");
+
+    return `${hours}${minutes}${seconds}`;
   }
 
   padLeft(nr, n, str){
