@@ -1,0 +1,6 @@
+services:
+
+  bcd:
+    image: quay.io/sardaukar_siet/bcd_clock:latest
+    ports:
+      - "8080:80"
