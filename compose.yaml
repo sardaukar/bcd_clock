@@ -2,5 +2,6 @@ services:
 
   bcd:
     image: quay.io/sardaukar_siet/bcd_clock:latest
+    restart: "unless-stopped"
     ports:
       - "8080:80"
