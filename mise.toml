@@ -1,2 +1,5 @@
 [env]
 REGISTRY_HOST = 'registry.avec.robotswithrastas.com'
+
+[tools]
+node = "22"
